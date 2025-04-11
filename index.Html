@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html lang>
+ <head>
+ <title>RESTAURANT LOGIN</title>
+ <style>
+    body{
+        background-color:aquamarine;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-container{
+        background-color: rgb(224, 220, 255);
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid#ccc;
+    }
+    #loginButton{
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid#000;
+        background-color: #ccc;
+        color:blue;
+        font-weight: bold;
+        cursor:pointer;
+    }
+    #loginButton:disabled{
+        background-color: #ccc;
+        color:#666;
+        cursor: not-allowed;
+    }
+    .error{
+        color:red
+    }
+ </style>
+ </head>
+ <body>
+    <div class="login-container">
+        <img src="https://cdn-icons-png.flaticon.com/
+        512/1046/1046841.png" alt="logo"/>
+        <h3>T&k</h3>
+
+        <input type="text"
+        id="username"
+        placeholder="username"/>
+        <input type="password"
+        id="password"
+        placeholder="password"/>
+        <button id="loginButton">LOGIN</button>
+        <p id="errorMsg"
+        class="error"></p>   
+    </div>
+ </body>
+ </html>
